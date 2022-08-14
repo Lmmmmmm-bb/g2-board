@@ -8,7 +8,7 @@ const App: FC = () => {
     <div className={styles.wrapper}>
       <h2 className={styles.header}>G2 Playground</h2>
       <div className={styles.linkWrapper}>
-        <Link to='/sankey'>Sankey</Link>
+        <Link to='/sankey'>桑基图 Sankey</Link>
       </div>
       <Routes>
         <Route path='/sankey' element={<Sankey />} />
