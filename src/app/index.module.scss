@@ -1,0 +1,25 @@
+.wrapper {
+  height: 100%;
+  text-align: center;
+
+  .header {
+    margin: 12px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .linkWrapper {
+    margin: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    a {
+      border-radius: 4px;
+      padding: 6px 12px;
+    }
+  }
+}
