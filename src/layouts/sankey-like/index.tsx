@@ -112,8 +112,13 @@ const SankeyLike: FC = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className={styles.wrapper}>
-      <h3 className={styles.title}>类桑基图 Sankey-Like</h3>
+    <div>
+      <svg>
+        <path d='M0 40 Q 50 20, 100 40 T 200 40, L 200 80, Q 150 100, 100 80, T 0 80' />
+      </svg>
+      <div ref={containerRef} className={styles.wrapper}>
+        <h3 className={styles.title}>类桑基图 Sankey-Like</h3>
+      </div>
     </div>
   );
 };
