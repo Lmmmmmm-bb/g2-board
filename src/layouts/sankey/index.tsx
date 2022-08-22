@@ -10,6 +10,7 @@ const Sankey: FC = () => {
 
   useEffect(() => {
     if (containerRef.current) {
+      chartRef.current && chartRef.current.destroy();
       const ds = new DataSet();
       const dv = ds
         .createView()
@@ -18,7 +19,6 @@ const Sankey: FC = () => {
         type: 'diagram.sankey',
         sort: () => -1
       });
-      chartRef.current && chartRef.current.destroy();
 
       const chart = new Chart({
         container: containerRef.current,
