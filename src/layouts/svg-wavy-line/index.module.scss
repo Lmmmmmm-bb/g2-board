@@ -1,0 +1,28 @@
+.wrapper {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+
+  .itemWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+    .item {
+      width: 200px;
+      height: 80px;
+      background-color: orange;
+      cursor: pointer;
+    }
+
+    .itemActive {
+      background-color: olivedrab;
+    }
+  }
+}

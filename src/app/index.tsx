@@ -1,8 +1,9 @@
 import { FC } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import styles from './index.module.scss';
 import Sankey from '@/layouts/sankey';
 import SankeyLike from '@/layouts/sankey-like';
+import SvgWavyLine from '@/layouts/svg-wavy-line';
+import styles from './index.module.scss';
 
 const App: FC = () => {
   return (
@@ -12,10 +13,12 @@ const App: FC = () => {
       <div className={styles.linkWrapper}>
         <Link to='/sankey'>桑基图 Sankey</Link>
         <Link to='/sankey-like'>类桑基图 Sankey-Like</Link>
+        <Link to='/svg-wavy-line'>Svg 波浪线 Svg Wavy Line</Link>
       </div>
       <Routes>
         <Route path='/sankey' element={<Sankey />} />
         <Route path='/sankey-like' element={<SankeyLike />} />
+        <Route path='/svg-wavy-line' element={<SvgWavyLine />} />
       </Routes>
     </div>
   );
